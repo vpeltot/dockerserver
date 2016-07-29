@@ -1,0 +1,204 @@
+compose.config.config.find: Using configuration files: ./docker-compose.yml
+docker.auth.auth.load_config: File doesn't exist
+compose.cli.command.get_client: docker-compose version 1.8.0, build f3628c7
+docker-py version: 1.9.0
+CPython version: 2.7.9
+OpenSSL version: OpenSSL 1.0.1e 11 Feb 2013
+compose.cli.command.get_client: Docker base_url: http+docker://localunixsocket
+compose.cli.command.get_client: Docker version: KernelVersion=3.19.0-32-generic, Os=linux, BuildTime=2016-07-28T22:00:36.714318713+00:00, ApiVersion=1.24, Version=1.12.0, GitCommit=8eab29e, Arch=amd64, GoVersion=go1.6.3
+compose.cli.verbose_proxy.proxy_callable: docker info <- ()
+compose.cli.verbose_proxy.proxy_callable: docker info -> {u'Architecture': u'x86_64',
+ u'BridgeNfIp6tables': True,
+ u'BridgeNfIptables': True,
+ u'CPUSet': True,
+ u'CPUShares': True,
+ u'CgroupDriver': u'cgroupfs',
+ u'ClusterAdvertise': u'',
+ u'ClusterStore': u'',
+ u'Containers': 2,
+ u'ContainersPaused': 0,
+...
+compose.cli.verbose_proxy.proxy_callable: docker inspect_network <- (u'a2420_default')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_network -> {u'Containers': {},
+ u'Driver': u'bridge',
+ u'EnableIPv6': False,
+ u'IPAM': {u'Config': [{u'Gateway': u'172.18.0.1',
+                        u'Subnet': u'172.18.0.0/16'}],
+           u'Driver': u'default',
+           u'Options': None},
+ u'Id': u'1abbca81e92ce0e5961578911eab2159d5b28d4fa654d5df975d3a1c8a86f416',
+ u'Internal': False,
+ u'Labels': {},
+...
+compose.cli.verbose_proxy.proxy_callable: docker containers <- (all=False, filters={u'label': [u'com.docker.compose.project=a2420', u'com.docker.compose.oneoff=False']})
+compose.cli.verbose_proxy.proxy_callable: docker containers -> (list with 0 items)
+compose.cli.verbose_proxy.proxy_callable: docker containers <- (all=True, filters={u'label': [u'com.docker.compose.project=a2420', u'com.docker.compose.service=db', u'com.docker.compose.oneoff=False']})
+compose.cli.verbose_proxy.proxy_callable: docker containers -> (list with 1 items)
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container <- (u'9a05b2d77d20de4b7979952de9f3917b3dd007b6885e9c3a5662499015dbf91f')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container -> {u'AppArmorProfile': u'',
+ u'Args': [u'mysql', u'start'],
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'service', u'mysql', u'start'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'MYSQL_ROOT_PASSWORD=rootpass',
+                      u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+...
+compose.cli.verbose_proxy.proxy_callable: docker containers <- (all=True, filters={u'label': [u'com.docker.compose.project=a2420', u'com.docker.compose.service=web', u'com.docker.compose.oneoff=False']})
+compose.cli.verbose_proxy.proxy_callable: docker containers -> (list with 1 items)
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container <- (u'c2eb4e5bc28fe87f207d802b82f21a48a6ec92f60406ca5afcc5afb07bd7fc1f')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container -> {u'AppArmorProfile': u'',
+ u'Args': [u'-c', u'/usr/local/src/run.sh'],
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash', u'-c', u'/usr/local/src/run.sh'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+                      u'DEBIAN_FRONTEND=noninteractive'],
+...
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image <- ('webserver/mysql-5.7.12')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image -> {u'Architecture': u'amd64',
+ u'Author': u'',
+ u'Comment': u'',
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'MYSQL_ROOT_PASSWORD=rootpass',
+...
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image <- ('webserver/a2420-p5622')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image -> {u'Architecture': u'amd64',
+ u'Author': u'',
+ u'Comment': u'',
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+...
+compose.cli.verbose_proxy.proxy_callable: docker containers <- (all=True, filters={u'label': [u'com.docker.compose.project=a2420', u'com.docker.compose.service=db', u'com.docker.compose.oneoff=False']})
+compose.cli.verbose_proxy.proxy_callable: docker containers -> (list with 1 items)
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image <- ('webserver/mysql-5.7.12')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image -> {u'Architecture': u'amd64',
+ u'Author': u'',
+ u'Comment': u'',
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'MYSQL_ROOT_PASSWORD=rootpass',
+...
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container <- (u'9a05b2d77d20de4b7979952de9f3917b3dd007b6885e9c3a5662499015dbf91f')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container -> {u'AppArmorProfile': u'',
+ u'Args': [u'mysql', u'start'],
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'service', u'mysql', u'start'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'MYSQL_ROOT_PASSWORD=rootpass',
+                      u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+...
+compose.cli.verbose_proxy.proxy_callable: docker containers <- (all=True, filters={u'label': [u'com.docker.compose.project=a2420', u'com.docker.compose.service=web', u'com.docker.compose.oneoff=False']})
+compose.cli.verbose_proxy.proxy_callable: docker containers -> (list with 1 items)
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image <- ('webserver/a2420-p5622')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_image -> {u'Architecture': u'amd64',
+ u'Author': u'',
+ u'Comment': u'',
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+...
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container <- (u'c2eb4e5bc28fe87f207d802b82f21a48a6ec92f60406ca5afcc5afb07bd7fc1f')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container -> {u'AppArmorProfile': u'',
+ u'Args': [u'-c', u'/usr/local/src/run.sh'],
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash', u'-c', u'/usr/local/src/run.sh'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+                      u'DEBIAN_FRONTEND=noninteractive'],
+...
+compose.parallel.feed_queue: Pending: set([<Service: db>, <Service: web>])
+compose.parallel.feed_queue: Starting producer thread for <Service: db>
+compose.service.start_container_if_stopped: Starting mysql
+compose.cli.verbose_proxy.proxy_callable: docker attach <- (u'9a05b2d77d20de4b7979952de9f3917b3dd007b6885e9c3a5662499015dbf91f', stderr=True, stream=True, stdout=True)
+compose.cli.verbose_proxy.proxy_callable: docker attach -> <generator object _stream_raw_result at 0x7efd0020ef50>
+compose.cli.verbose_proxy.proxy_callable: docker start <- (u'9a05b2d77d20de4b7979952de9f3917b3dd007b6885e9c3a5662499015dbf91f')
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.cli.verbose_proxy.proxy_callable: docker start -> None
+compose.parallel.parallel_execute_iter: Finished processing: <Service: db>
+compose.parallel.feed_queue: Pending: set([<Service: web>])
+compose.parallel.feed_queue: Starting producer thread for <Service: web>
+compose.service.start_container_if_stopped: Starting webserver
+compose.cli.verbose_proxy.proxy_callable: docker attach <- (u'c2eb4e5bc28fe87f207d802b82f21a48a6ec92f60406ca5afcc5afb07bd7fc1f', stderr=True, stream=True, stdout=True)
+compose.cli.verbose_proxy.proxy_callable: docker attach -> <generator object _stream_raw_result at 0x7efd0020ecd0>
+compose.cli.verbose_proxy.proxy_callable: docker start <- (u'c2eb4e5bc28fe87f207d802b82f21a48a6ec92f60406ca5afcc5afb07bd7fc1f')
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.parallel.feed_queue: Pending: set([])
+compose.cli.verbose_proxy.proxy_callable: docker start -> None
+compose.parallel.parallel_execute_iter: Finished processing: <Service: web>
+compose.parallel.feed_queue: Pending: set([])
+Attaching to mysql, webserver
+compose.cli.verbose_proxy.proxy_callable: docker wait <- (u'9a05b2d77d20de4b7979952de9f3917b3dd007b6885e9c3a5662499015dbf91f')
+mysql  | Starting MySQL
+compose.cli.verbose_proxy.proxy_callable: docker events <- (decode=True, filters={u'label': [u'com.docker.compose.project=a2420', u'com.docker.compose.oneoff=False']})
+mysql  |  * 
+compose.cli.verbose_proxy.proxy_callable: docker events -> <generator object _stream_helper at 0x7efd0020eb40>
+compose.cli.verbose_proxy.proxy_callable: docker wait -> 0
+mysql exited with code 0
+compose.cli.verbose_proxy.proxy_callable: docker wait <- (u'c2eb4e5bc28fe87f207d802b82f21a48a6ec92f60406ca5afcc5afb07bd7fc1f')
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container <- (u'c2eb4e5bc28fe87f207d802b82f21a48a6ec92f60406ca5afcc5afb07bd7fc1f')
+compose.cli.verbose_proxy.proxy_callable: docker wait -> 0
+compose.cli.verbose_proxy.proxy_callable: docker inspect_container -> {u'AppArmorProfile': u'',
+ u'Args': [u'-c', u'/usr/local/src/run.sh'],
+ u'Config': {u'AttachStderr': False,
+             u'AttachStdin': False,
+             u'AttachStdout': False,
+             u'Cmd': [u'/bin/bash', u'-c', u'/usr/local/src/run.sh'],
+             u'Domainname': u'',
+             u'Entrypoint': None,
+             u'Env': [u'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+                      u'DEBIAN_FRONTEND=noninteractive'],
+...
+webserver exited with code 0
+
