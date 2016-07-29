@@ -1,0 +1,24 @@
+version: '2'
+services:
+ 
+  web:
+    image: webserver/a2420-p5622
+    container_name: webserver
+    command: ["/bin/bash","-c","/usr/local/src/run.sh"]
+    depends_on:
+      - db
+    volumes:
+      - /webserver/HTDOCS/wordpress:/var/www/vhosts/test1/public
+    links:
+      - db
+    stdin_open: true
+    tty: true 
+
+  db:
+    image: webserver/mysql-5.7.12
+    container_name: mysql
+    command: ["/bin/bash","-c","service mysql start"]
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+    stdin_open: true
+    tty: true
